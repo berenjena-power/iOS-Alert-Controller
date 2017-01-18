@@ -16,6 +16,11 @@ TBD
 
 # Usage
 
+To integrate Alert Controller into your Xcode project using Carthage, specify it in your `Cartfile`:
+```ogdl
+github "sebastianvarela/iOS-Alert-Controller" 
+```
+
 In any UIViewController, add the imports:
 ```Swift
 import AlertController
@@ -25,7 +30,7 @@ import ReactiveSwift
 And call the method when we want to present the alert:
 ```Swift
 func someMethod() {
-	presentAlert(showCloseInHeader: true, title: "Title", subtitle: "Subtitle", buttonTitle: "primary", secondaryButtonTitle: "secondary", iconType: .info)
+	presentAlert(title: "Title", subtitle: "Subtitle", buttonTitle: "primary", secondaryButtonTitle: "secondary", showClose: true, iconType: .info)
         .observe(on: UIScheduler())
         .startWithValues { event in
             switch event.userAction {
