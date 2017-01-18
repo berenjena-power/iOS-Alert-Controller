@@ -19,7 +19,7 @@ public class IconAlertComponent: AlertComponent {
     func getView(_ alert: UIView) -> UIView {
         let headerView = UIView()
 
-        guard let iconImage = UIImage(named: iconType.rawValue) else {
+        guard let iconImage = UIImage(named: iconType.rawValue, in: Bundle(for: type(of: self)), compatibleWith: nil) else {
             return headerView
         }
         

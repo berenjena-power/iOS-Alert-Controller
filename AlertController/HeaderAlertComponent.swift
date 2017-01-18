@@ -27,7 +27,7 @@ class HeaderAlertComponent: AlertComponent {
         
         if (showCloseButton) {
             let closebutton = UIButton()
-            closebutton.setImage(UIImage(named: "icn_close_red"), for: .normal)
+            closebutton.setImage(UIImage(named: "icn_close_red", in: Bundle(for: type(of: self)), compatibleWith: nil), for: .normal)
             closebutton.setTitleColor(.fromHex("EC0000"), for: .normal)
             closebutton.addTarget(self, action: #selector(closeButtonTapped), for: .touchUpInside)
             

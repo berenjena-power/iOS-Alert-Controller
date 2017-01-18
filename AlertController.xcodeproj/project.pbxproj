@@ -88,9 +88,7 @@
 				F298CD211E2F7B8700964328 /* Extensions */,
 				F298CD201E2F7B8100964328 /* Core */,
 				F298CD041E2F76D000964328 /* Components */,
-				F298CCA81E2EAEA700964328 /* AlertController.h */,
-				F298CCA91E2EAEA700964328 /* Info.plist */,
-				F298CD1E1E2F7AFB00964328 /* Media.xcassets */,
+				F298CD251E2F8D9E00964328 /* Supporting Files */,
 			);
 			path = AlertController;
 			sourceTree = "<group>";
@@ -136,6 +134,16 @@
 				F298CD1C1E2F7A8700964328 /* UIViewControllerExtensions.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F298CD251E2F8D9E00964328 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F298CCA81E2EAEA700964328 /* AlertController.h */,
+				F298CCA91E2EAEA700964328 /* Info.plist */,
+				F298CD1E1E2F7AFB00964328 /* Media.xcassets */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
