@@ -8,12 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		F298CCAA1E2EAEA700964328 /* AlertController.h in Headers */ = {isa = PBXBuildFile; fileRef = F298CCA81E2EAEA700964328 /* AlertController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F298CD001E2F76BE00964328 /* AlertAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298CCFC1E2F76BE00964328 /* AlertAnimationController.swift */; };
+		F298CD011E2F76BE00964328 /* AlertComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298CCFD1E2F76BE00964328 /* AlertComponent.swift */; };
+		F298CD021E2F76BE00964328 /* AlertPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298CCFE1E2F76BE00964328 /* AlertPresentationController.swift */; };
+		F298CD031E2F76BE00964328 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298CCFF1E2F76BE00964328 /* AlertViewController.swift */; };
+		F298CD091E2F76DA00964328 /* FooterButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298CD051E2F76DA00964328 /* FooterButtonComponent.swift */; };
+		F298CD0A1E2F76DA00964328 /* HeaderAlertComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298CD061E2F76DA00964328 /* HeaderAlertComponent.swift */; };
+		F298CD0B1E2F76DA00964328 /* IconAlertComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298CD071E2F76DA00964328 /* IconAlertComponent.swift */; };
+		F298CD0C1E2F76DA00964328 /* TextAlertComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298CD081E2F76DA00964328 /* TextAlertComponent.swift */; };
+		F298CD141E2F789E00964328 /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F298CD0E1E2F789E00964328 /* Cartography.framework */; };
+		F298CD151E2F789E00964328 /* Helpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F298CD0F1E2F789E00964328 /* Helpers.framework */; };
+		F298CD161E2F789E00964328 /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F298CD101E2F789E00964328 /* Logger.framework */; };
+		F298CD171E2F789E00964328 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F298CD111E2F789E00964328 /* ReactiveCocoa.framework */; };
+		F298CD181E2F789E00964328 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F298CD121E2F789E00964328 /* ReactiveSwift.framework */; };
+		F298CD191E2F789E00964328 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F298CD131E2F789E00964328 /* Result.framework */; };
+		F298CD1D1E2F7A8700964328 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F298CD1C1E2F7A8700964328 /* UIViewControllerExtensions.swift */; };
+		F298CD1F1E2F7AFB00964328 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F298CD1E1E2F7AFB00964328 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F298CCA51E2EAEA700964328 /* AlertController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlertController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F298CCA81E2EAEA700964328 /* AlertController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertController.h; sourceTree = "<group>"; };
 		F298CCA91E2EAEA700964328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F298CCFC1E2F76BE00964328 /* AlertAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertAnimationController.swift; sourceTree = "<group>"; };
+		F298CCFD1E2F76BE00964328 /* AlertComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertComponent.swift; sourceTree = "<group>"; };
+		F298CCFE1E2F76BE00964328 /* AlertPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPresentationController.swift; sourceTree = "<group>"; };
+		F298CCFF1E2F76BE00964328 /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		F298CD051E2F76DA00964328 /* FooterButtonComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterButtonComponent.swift; sourceTree = "<group>"; };
+		F298CD061E2F76DA00964328 /* HeaderAlertComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderAlertComponent.swift; sourceTree = "<group>"; };
+		F298CD071E2F76DA00964328 /* IconAlertComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconAlertComponent.swift; sourceTree = "<group>"; };
+		F298CD081E2F76DA00964328 /* TextAlertComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAlertComponent.swift; sourceTree = "<group>"; };
+		F298CD0E1E2F789E00964328 /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
+		F298CD0F1E2F789E00964328 /* Helpers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Helpers.framework; path = Carthage/Build/iOS/Helpers.framework; sourceTree = "<group>"; };
+		F298CD101E2F789E00964328 /* Logger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Logger.framework; path = Carthage/Build/iOS/Logger.framework; sourceTree = "<group>"; };
+		F298CD111E2F789E00964328 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		F298CD121E2F789E00964328 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		F298CD131E2F789E00964328 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		F298CD1C1E2F7A8700964328 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		F298CD1E1E2F7AFB00964328 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +53,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F298CD141E2F789E00964328 /* Cartography.framework in Frameworks */,
+				F298CD151E2F789E00964328 /* Helpers.framework in Frameworks */,
+				F298CD161E2F789E00964328 /* Logger.framework in Frameworks */,
+				F298CD171E2F789E00964328 /* ReactiveCocoa.framework in Frameworks */,
+				F298CD181E2F789E00964328 /* ReactiveSwift.framework in Frameworks */,
+				F298CD191E2F789E00964328 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +70,7 @@
 			children = (
 				F298CCA71E2EAEA700964328 /* AlertController */,
 				F298CCA61E2EAEA700964328 /* Products */,
+				F298CD0D1E2F789E00964328 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +85,57 @@
 		F298CCA71E2EAEA700964328 /* AlertController */ = {
 			isa = PBXGroup;
 			children = (
+				F298CD211E2F7B8700964328 /* Extensions */,
+				F298CD201E2F7B8100964328 /* Core */,
+				F298CD041E2F76D000964328 /* Components */,
 				F298CCA81E2EAEA700964328 /* AlertController.h */,
 				F298CCA91E2EAEA700964328 /* Info.plist */,
+				F298CD1E1E2F7AFB00964328 /* Media.xcassets */,
 			);
 			path = AlertController;
+			sourceTree = "<group>";
+		};
+		F298CD041E2F76D000964328 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F298CD051E2F76DA00964328 /* FooterButtonComponent.swift */,
+				F298CD061E2F76DA00964328 /* HeaderAlertComponent.swift */,
+				F298CD071E2F76DA00964328 /* IconAlertComponent.swift */,
+				F298CD081E2F76DA00964328 /* TextAlertComponent.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		F298CD0D1E2F789E00964328 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F298CD0E1E2F789E00964328 /* Cartography.framework */,
+				F298CD0F1E2F789E00964328 /* Helpers.framework */,
+				F298CD101E2F789E00964328 /* Logger.framework */,
+				F298CD111E2F789E00964328 /* ReactiveCocoa.framework */,
+				F298CD121E2F789E00964328 /* ReactiveSwift.framework */,
+				F298CD131E2F789E00964328 /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F298CD201E2F7B8100964328 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F298CCFC1E2F76BE00964328 /* AlertAnimationController.swift */,
+				F298CCFD1E2F76BE00964328 /* AlertComponent.swift */,
+				F298CCFE1E2F76BE00964328 /* AlertPresentationController.swift */,
+				F298CCFF1E2F76BE00964328 /* AlertViewController.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		F298CD211E2F7B8700964328 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F298CD1C1E2F7A8700964328 /* UIViewControllerExtensions.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +181,7 @@
 				TargetAttributes = {
 					F298CCA41E2EAEA700964328 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -121,6 +208,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F298CD1F1E2F7AFB00964328 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +219,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F298CD011E2F76BE00964328 /* AlertComponent.swift in Sources */,
+				F298CD021E2F76BE00964328 /* AlertPresentationController.swift in Sources */,
+				F298CD001E2F76BE00964328 /* AlertAnimationController.swift in Sources */,
+				F298CD0C1E2F76DA00964328 /* TextAlertComponent.swift in Sources */,
+				F298CD031E2F76BE00964328 /* AlertViewController.swift in Sources */,
+				F298CD091E2F76DA00964328 /* FooterButtonComponent.swift in Sources */,
+				F298CD0B1E2F76DA00964328 /* IconAlertComponent.swift in Sources */,
+				F298CD0A1E2F76DA00964328 /* HeaderAlertComponent.swift in Sources */,
+				F298CD1D1E2F7A8700964328 /* UIViewControllerExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,17 +336,23 @@
 		F298CCAE1E2EAEA700964328 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AlertController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sebastianvarela.AlertController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -257,11 +360,16 @@
 		F298CCAF1E2EAEA700964328 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AlertController/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -291,6 +399,7 @@
 				F298CCAF1E2EAEA700964328 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
