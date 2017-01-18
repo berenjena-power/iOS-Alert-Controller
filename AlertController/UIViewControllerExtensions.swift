@@ -13,7 +13,7 @@ public extension UIViewController {
                 headerComponent.userActionsSignal
                     .observe(on: UIScheduler())
                     .observeValues { value in
-                        observer.send(value: AlertResponse(alertUserActionType: .dismissButtonTapped, alert: alertController))
+                        observer.send(value: AlertResponse(actionType: .dismissButtonTapped, alert: alertController))
                 }
                 alertController.components.append(headerComponent)
             }
@@ -32,7 +32,7 @@ public extension UIViewController {
                 buttonComponent.userActionsSignal
                     .observe(on: UIScheduler())
                     .observeValues { value in
-                        observer.send(value: AlertResponse(alertUserActionType: .primaryButtonTapped, alert: alertController))
+                        observer.send(value: AlertResponse(actionType: .primaryButtonTapped, alert: alertController))
                         observer.sendCompleted()
                 }
             } else {
@@ -44,9 +44,9 @@ public extension UIViewController {
                     .observeValues { value in
                         switch value {
                         case .primaryButtonTapped:
-                            observer.send(value: AlertResponse(alertUserActionType: .primaryButtonTapped, alert: alertController))
+                            observer.send(value: AlertResponse(actionType: .primaryButtonTapped, alert: alertController))
                         case .secondaryButtonTapped:
-                            observer.send(value: AlertResponse(alertUserActionType: .secondaryButtonTapped, alert: alertController))
+                            observer.send(value: AlertResponse(actionType: .secondaryButtonTapped, alert: alertController))
                         }
                         observer.sendCompleted()
                 }
