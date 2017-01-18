@@ -4,7 +4,7 @@ import ReactiveCocoa
 import Helpers
 
 public enum AlertUserAction {
-    case dismissButtonTapped
+    case closeButtonTapped
     case primaryButtonTapped
     case secondaryButtonTapped
 }

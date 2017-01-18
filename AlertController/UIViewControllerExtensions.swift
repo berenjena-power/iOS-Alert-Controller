@@ -3,17 +3,17 @@ import ReactiveSwift
 import Result
 
 public extension UIViewController {
-    public func presentAlert(showCloseInHeader: Bool = false, title: String, subtitle: String = "", buttonTitle: String, secondaryButtonTitle: String = "", iconType: IconAlertComponent.IconType = .success) -> SignalProducer<AlertResponse, NoError> {
+    public func presentAlert(title: String, subtitle: String = "", buttonTitle: String, secondaryButtonTitle: String = "", showClose: Bool = true, iconType: IconAlertComponent.IconType = .success) -> SignalProducer<AlertResponse, NoError> {
         return SignalProducer { observer, disposable in
             
             let alertController = AlertViewController(animationDirection: .fromTop(topMargin: UIScreen.main.bounds.height / 2.0))
             
-            if showCloseInHeader {
+            if showClose {
                 let headerComponent = HeaderAlertComponent(showCloseButton: true)
                 headerComponent.userActionsSignal
                     .observe(on: UIScheduler())
                     .observeValues { value in
-                        observer.send(value: AlertResponse(userAction: .dismissButtonTapped, alert: alertController))
+                        observer.send(value: AlertResponse(userAction: .closeButtonTapped, alert: alertController))
                 }
                 alertController.components.append(headerComponent)
             }
