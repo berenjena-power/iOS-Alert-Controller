@@ -25,7 +25,7 @@ import ReactiveSwift
 And call the method when we want to present the alert:
 ```Swift
 func someMethod() {
-    presentAlert(title: "Title", buttonTitle: "close")
+	presentAlert(showCloseInHeader: true, title: "Title", subtitle: "Subtitle", buttonTitle: "primary", secondaryButtonTitle: "secondary", iconType: .info)
         .observe(on: UIScheduler())
         .startWithValues { event in
             switch event.userAction {
