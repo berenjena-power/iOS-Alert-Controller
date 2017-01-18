@@ -25,7 +25,7 @@ import ReactiveSwift
 And call the method when we want to present the alert:
 ```Swift
 func someMethod() {
-    presentAlert(title: "hola", buttonTitle: "chau")
+    presentAlert(title: "Title", buttonTitle: "close")
         .observe(on: UIScheduler())
         .startWithValues { event in
             switch event.userAction {
@@ -34,6 +34,6 @@ func someMethod() {
             case .secondaryButtonTapped: secondaryAction()
             }
             event.dismissAlert(animated: true)
-    }	
+		}	
 }
 ```
