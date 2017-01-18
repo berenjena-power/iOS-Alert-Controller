@@ -9,3 +9,31 @@
 
 ## Introduction
 
+
+# Configuration
+
+TBD
+
+# Usage
+
+In any UIViewController, add the imports:
+```Swift
+import AlertController
+import ReactiveSwift
+```
+
+And call the method when we want to present the alert:
+```Swift
+func someMethod() {
+    presentAlert(title: "hola", buttonTitle: "chau")
+        .observe(on: UIScheduler())
+        .startWithValues { event in
+            switch event.userAction {
+            case .primaryButtonTapped: primaryAction()
+            case .dismissButtonTapped: fallthrough
+            case .secondaryButtonTapped: secondaryAction()
+            }
+            event.dismissAlert(animated: true)
+    }	
+}
+```
