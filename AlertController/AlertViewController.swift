@@ -10,8 +10,12 @@ public enum AlertUserAction {
 }
 
 public struct AlertResponse {
-    let alertUserActionType: AlertUserAction
+    public let alertUserActionType: AlertUserAction
     let alert: AlertViewController
+    
+    func dismissAlert(animated: Bool, completion: (() -> Void)?) {
+        alert.dismiss(animated: animated, completion: completion)
+    }
 }
 
 enum AlertComponentCategory: Int {
